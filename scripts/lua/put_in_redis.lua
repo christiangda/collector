@@ -18,8 +18,8 @@ end
 ngx.say("set result: ", ok)
 
 -- or just close the connection right away:
--- local ok, err = red:close()
--- if not ok then
---     ngx.say("failed to close: ", err)
---     return
--- end
+local ok, err = red:close()
+if not ok then
+    ngx.say("failed to close: ", err)
+    return
+end
