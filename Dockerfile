@@ -10,7 +10,7 @@ RUN apk add --no-cache --update --virtual \
  
 # Copy configuration files
 COPY conf/redis/redis.conf /etc/redis.conf
-COPY conf/nginx/nginx.conf /etc/nginx/nginx.conf
+COPY conf/nginx/nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
 COPY conf/nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # Copy provisioning files
