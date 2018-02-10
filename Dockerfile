@@ -14,7 +14,6 @@ RUN apk add --no-cache --update --virtual \
 COPY conf/redis/redis.conf /etc/redis.conf
 COPY scripts/lua/put_in_redis.lua /etc/nginx/lua/put_in_redis.lua
 COPY conf/nginx/nginx.conf /usr/local/openresty/nginx/conf/nginx.conf
-COPY conf/nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # Copy provisioning files
 COPY scripts/bash/docker-entrypoint.sh /usr/local/bin/
